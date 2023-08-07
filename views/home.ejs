@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chat</title>
+</head>
+<body>
+    <div id="massage"></div>
+
+    <form id="form">
+        <label for="msg-input">massage :</label>
+        <input type="text" username=<%= user.username %> id="msg-input">
+        <button id="msg-btn">submit</button>
+    </form>
+    <form action="/home" method="post">
+        <input type="submit" value="logout">
+    </form>
+
+    <script src="socket.io/socket.io.js"></script>
+    <script src="script.js" type="module">
+
+    </script>
+</body>
+</html>
